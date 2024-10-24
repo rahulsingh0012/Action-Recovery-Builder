@@ -108,7 +108,7 @@ jobs:
 
     - name: bootable recovery
       run: |
-        git clone https://github.com/enetec1/SHRP_bootable_recovery.git -b android-12.1
+        git clone https://github.com/rahulsingh0012/shrp_bootable_recovery.git -b android-12.1
       working-directory: workspace
 
     - name: Clone device tree
