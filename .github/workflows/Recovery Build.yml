@@ -99,7 +99,8 @@ jobs:
         cd workspace
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
-        repo init --depth=1 -u https://github.com/enetec1/SHRP_bootable_recovery.git -b ${{ inputs.MANIFEST_BRANCH }}
+        repo init --depth=1 -u https://github.com/SHRP/manifest.git -b ${{ inputs.MANIFEST_BRANCH }}
+        git colne https://github.com/enetec1/SHRP_bootable_recovery.git -b android-12.1
           
     - name: Repo Sync
       run: |
