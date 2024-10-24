@@ -99,7 +99,7 @@ jobs:
         cd workspace
         git config --global user.name "${GITHUB_ACTOR}"
         git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
-        repo init --depth=1 -u https://github.com/SHRP/manifest.git -b shrp-12.1 ${{ inputs.MANIFEST_BRANCH }}
+        repo init --depth=1 -u https://github.com/SHRP/manifest.git -b ${{ inputs.MANIFEST_BRANCH }}
           
     - name: Repo Sync
       run: |
